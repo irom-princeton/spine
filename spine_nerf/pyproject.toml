@@ -1,0 +1,26 @@
+[project]
+name = "spine"
+version = "0.1.1"
+requires-python = ">=3.8"
+
+dependencies=[
+    "timm",
+    "ftfy",
+    "regex",
+    "tqdm",
+    "einops",
+    "gdown",
+    "matplotlib",
+    "nerfstudio>=0.3.3",
+    "numpy",
+    "pillow",
+    "torchtyping",
+    "hydra-core",
+    "natsort",
+]
+
+[tool.setuptools.packages.find]
+include = ["spine*"]
+
+[project.entry-points.'nerfstudio.method_configs']
+spine = 'spine.spine_config:spine_method'

@@ -1,0 +1,8 @@
+{
+    "<scene_name>": {
+        "base": "<path to nerfstudio config.yml file for the base scene",
+        "dinov3": "<path to nerfstudio config.yml file for the dinov3 scene",
+        "dinov2": "<path to nerfstudio config.yml file for the dinov2 scene",
+        "vggt_point_head": "<path to nerfstudio config.yml file for the vggt scene"
+    }
+}

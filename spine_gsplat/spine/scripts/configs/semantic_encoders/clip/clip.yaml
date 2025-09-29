@@ -1,0 +1,3 @@
+_target_: spine.encoders.clip_encoder.CLIPNetwork
+config: 
+ _target_: spine.encoders.clip_encoder.CLIPNetworkConfig

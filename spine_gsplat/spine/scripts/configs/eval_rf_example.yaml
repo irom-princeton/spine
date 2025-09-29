@@ -1,0 +1,42 @@
+defaults:
+  # semantic encoders
+  # select the desired semantic encoders
+  - semantic_encoders/dino_v3/dino_v3
+  - semantic_encoders/dino_v2/dino_v2
+  - semantic_encoders/vggt/vggt
+  - semantic_encoders/clip/clip
+
+  # evaluator
+  - evaluators/spine_cfg/spine_eval_cfg  # config
+  - evaluators/spine/spine_eval         # evaluator
+
+  # self
+  - _self_
+
+# object queries
+object_queries:
+  # scene name
+  example_scene_0:
+    # object names
+    - example_objects_0
+    - example_objects_1
+    - example_objects_N
+  example_scene_1:
+    # object names
+    - example_objects_0
+    - example_objects_1
+    - example_objects_N
+  
+# evaluation parameters
+evaluation:
+  # path to file containing config paths of the radiance fields
+  rad_field_config_path: <config file path, e.g., scripts/rad_field_paths/rad_field_cfg_paths_example.json>
+  # number of camera poses for evaluation
+  num_eval_cams: 100
+  # option to save results
+  save_results: true
+  # output path for results
+  base_output_path: <output directory>
+  # option to load semantic encoders
+  enable_semantic_encoders: false
+  

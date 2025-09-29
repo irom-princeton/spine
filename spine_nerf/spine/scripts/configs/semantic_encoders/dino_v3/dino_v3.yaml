@@ -1,0 +1,4 @@
+_target_: spine.encoders.dino_encoder.DINONetwork
+config: 
+  _target_: spine.encoders.dino_encoder.DINONetworkConfig
+  model_name: dinov3_vits14

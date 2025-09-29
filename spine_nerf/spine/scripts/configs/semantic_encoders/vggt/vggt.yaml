@@ -1,0 +1,3 @@
+_target_: spine.encoders.vggt_encoder.VGGTNetwork
+config: 
+  _target_: spine.encoders.vggt_encoder.VGGTNetworkConfig
